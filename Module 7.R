@@ -46,6 +46,12 @@ cod
 
 ffxiv@sales <- 41235678
 cod@sale <- 25222555
+## I didn't notice at first when I was going through everything that I misspelled the sales variable
+## for the object and what occurred was the R threw an error.
+Error in (function (cl, name, valueClass)  : 
+  ‘sale’ is not a slot in class “videogame” 
+## S4 Objects have safety as part of their creation, and will not function correctly due to misspelling.
+## Also, unlike S3, it will not try to create a new variable called "sale".
 cod@onSale <- FALSE
 
 ffxiv
